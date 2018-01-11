@@ -18,8 +18,10 @@
         android:text="Start Game"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Picture" />
+        app:layout_constraintTop_toBottomOf="@+id/Picture"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/Picture"
@@ -29,7 +31,7 @@
         android:layout_marginEnd="76dp"
         android:layout_marginStart="76dp"
         android:background="@android:drawable/menuitem_background"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/themeBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
@@ -46,5 +48,25 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/themeBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginStart="16dp"
+        android:text="Theme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Difficulty"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="427dp" />
 
 </android.support.constraint.ConstraintLayout>
